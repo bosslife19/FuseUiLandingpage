@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fuse Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Familjen+Grotesk:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <style>
+    .smaller {
+      font-family: "Familjen Grotesk", sans-serif;
+
+      font-weight: 400px;
+      font-style: normal;
+    }
+    .bigger {
+      font-family: "Familjen Grotesk", sans-serif;
+
+      font-weight: 700px;
+      font-style: normal;
+    }
+    .dm{
+        font-family: "DM Sans", sans-serif;
+    }
+    .dm-big{
+        font-weight: 700;
+    }
+    .dm-small{
+        font-weight: 400;
+    }
+    .dm-medium{
+        font-weight: 500;
+    }
+    .lh{
+        line-height: 72px;
+    }
+    body{
+        background-color: #01131F;
+        
+    }
+  </style>
+  <body>
+    <header class="px-[3%]">
+        <nav class="px-5 pt-2 flex items-center justify-between">
+            <div class="logo">
+                <img src="/images/logo.png" alt="" class="w-[96] h-[24]">
+            </div>
+            <div class="nav-links dm hidden md:block">
+                <ul class="flex justify-between items-center text-white text-[16px] dm-big gap-4">
+                    <li><a href="">Who we are</a></li>
+                    <li><a href="">Marketplace</a></li>
+                    <li><a href="">Community</a></li>
+                    <li><a href="">3PLs</a></li>
+                </ul>
+            </div>
+            <div class="button hidden md:block">
+                <a href="#" class="bg-[#03A9F4] text-white px-2 py-2 rounded-[8px]">Join the waitlist</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+
+    <section class="hero flex gap-3 px-[3%]">
+        <div class="left py-[20%] flex-1">
+            <h2 class="dm dm-big text-[#FFC107] text-[14px]">COLLABORATIVE SUPPLY CHAIN NETWORK</h2>
+            <h1 class="w-full bigger text-[60px] text-white lh my-3">Streamline Your <span class="text-[#03A9F4]">Supply Chain</span> with Our Platform</h1>
+            <p class="dm dm-small text-[20px] text-white"><span class="text-[#03A9F4]">Join</span> the waitlist <span class="text-[#03A9F4]">to connect with</span> top supply chain experts and be the <span class="text-[#03A9F4]">first to</span> streamline your operations.</p>
+
+            <div class="input my-6 text-white">
+                <form class="relative">
+                    <input type="email" placeholder="Enter your email address" class="block w-[540px] py-4 rounded-[16px] bg-[#01131F] border-[0.5px] border-white pl-3">
+                    <a href="#" class="bg-[#03A9F4] text-white px-2 py-3 rounded-[8px] absolute right-[95px] top-1">Join the waitlist</a>
+                </form>
+            </div>
+
+            <div class="flex w-[60%] items-center gap-4 mt-5">
+                <div class="flex-1">
+                    <img src="/images/people.png" alt="" class="w-full object-contain">
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col">
+                        <img src="/images/rating-stars.png" alt="" class="w-full object-contain">
+                        <p class="text-white dm dm-medium">Join over 200+ clients waiting</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right flex-1 relative">
+            <div class="w-[48px] h-[48px] rounded-full bg-[#03A9F4] absolute bottom-0 right-0 flex justify-center items-center">
+                <a href="">
+                    <img src="/images/Icon.png" alt="" class="w-[24px] h-[24px]">
+                </a>
+                
+            </div>
+        </div>
+    </section>
+    <!-- Trusted by section -->
+
+    <section class="trustedBy py-5">
+        <h2 class="text-[18px] dm dm-big text-[#BFBFBF] text-center">Trusted by Top Companies</h2>
+
+        <div class="company-logos flex gap-5">
+            <img src="/images/1.png" alt="" class="flex-1 object-contain">
+            <img src="/images/Vector.png" alt="" class="flex-1 object-contain">
+            <img src="/images/3.png" alt="" class="flex-1 object-contain">
+            <img src="/images/5.png" alt="" class="flex-1 object-contain">
+            <img src="/images/6.png" alt="" class="flex-1 object-contain">
+            <img src="/images/7.png" alt="" class="flex-1 object-contain">
+        </div>
+    </section>
+
+    <!-- end of trusted by -->
+     <section class="bg-[#022236] py-10 flex flex-col items-center gap-5">
+        <h2 class="dm dm-big text-[#FFC107] text-[14px]">COLLABORATIVE SUPPLY CHAIN NETWORK</h2>
+        <h1 class="bigger text-white text-[48px]">Your <span class="text-[#03A9F4]">Supply</span> Chain, Your <span class="text-[#FFC107]">Way</span> </h1>
+
+        <p class="smaller text-white text-[24px] w-[60%] text-center">Fuse is a collaborative supply chain platform that connects businesses with freelance experts, streamlining supply chain processes and driving better business decisions.</p>
+
+     </section>
+
+     <section class="py-10 px-[5%] flex gap-[12%]">
+        <div class="imageContainer flex-1">
+            <img src="/images/firstImg.png" alt="" class="w-full object-contain">
+        </div>
+        <div class="texts flex-1 mt-4 flex flex-col gap-4">
+            <h3 class="dm dm-big text-[#03A9F4] text-14px">SERVICE MARKET PLACE</h3>
+            <h1 class="text-white bigger text-[48px]" style="line-height: 60px;">Find Expert Supply Chain Solutions On Fuse Marketplace</h1>
+            <p class="text-[#E6F6FE] text-[18px] dm dm-small" style="line-height: 28px;">Find freelance supply chain experts for all your business needs, from logistics planning to procurement and analytics. Collaborate with experts to streamline your supply chain. Get high-quality results and make better decisions.</p>
+
+            <a href="" class="flex mt-3 px-4 py-4 bg-[#032B44] text-white gap-3 dm dm-big text-[16px] rounded-[12px] items-center w-[35%]">Join the waitlist <img src="/images/arrow.png" alt="" class="w-[18px] h-[18px]"></a>
+        </div>
+     </section>
+
+     <section class="py-10 px-[5%] flex gap-[12%] flex-row-reverse">
+        <div class="imageContainer flex-1">
+            <img src="/images/secondImg.png" alt="" class="w-full object-contain">
+        </div>
+        <div class="texts flex-1 mt-4 flex flex-col gap-4">
+            <h3 class="dm dm-big text-[#FFC107] text-14px">COLLABORATIVE COMMUNITY FEATURE</h3>
+            <h1 class="text-white bigger text-[48px]" style="line-height: 60px;">Join Our Supply Chain Community here on Fuse</h1>
+            <p class="text-[#E6F6FE] text-[18px] dm dm-small" style="line-height: 28px;">Connect with professionals and industry experts, Share insights, trends, and best practices. Get advice, support, and feedback. Grow your network and stay ahead.</p>
+
+            <a href="" class="flex mt-3 px-4 py-4 bg-[#FFC107] text-white gap-3 dm dm-big text-[16px] rounded-[12px] items-center w-[35%]">Join the waitlist <img src="/images/arrow.png" alt="" class="w-[18px] h-[18px]"></a>
+        </div>
+     </section>
+
+     <section class="py-10 px-[5%] flex gap-[12%]">
+        <div class="imageContainer flex-1">
+            <img src="/images/thirdImg.png" alt="" class="w-full object-contain">
+        </div>
+        <div class="texts flex-1 mt-4 flex flex-col gap-4">
+            <h3 class="dm dm-big text-[#03A9F4] text-14px">EFFICIENT 3PL SERVICES</h3>
+            <h1 class="text-white bigger text-[48px]" style="line-height: 60px;">Optimize your operations with Fuse 3PL Solutions</h1>
+            <p class="text-[#E6F6FE] text-[18px] dm dm-small" style="line-height: 28px;">Leverage integrated third-party logistics providers to streamline your supply chain and improve efficiency. Reduce costs, enhance scalability, and ensure reliable logistics management with Fuse 3PL solutions.</p>
+
+            <a href="" class="flex mt-3 px-4 py-4 bg-[#032B44] text-white gap-3 dm dm-big text-[16px] rounded-[12px] items-center w-[35%]">Join the waitlist <img src="/images/arrow.png" alt="" class="w-[18px] h-[18px]"></a>
+        </div>
+     </section>
+
+     <section class="px-[3%]">
+        <div class="bg-[#03A9F4] py-8 rounded-[24px] pl-5">
+            <p class="text-white font-inter text-[31px]">Questions?</p>
+            <p class="text-white font-inter text-[31px]">FAQ</p>
+            <div class="mt-5 w-[52px] h-[32px] rounded-[16px] bg-white flex items-center justify-center">
+                <img src="/images/arrow-up.png" alt="" class="w-[20px] h-[20px]">
+            </div>
+        </div>
+     </section>
+
+  </body>
+</html>
