@@ -38,6 +38,9 @@
     .lh{
         line-height: 72px;
     }
+    .lh60{
+        line-height: 60px;
+    }
     body{
         background-color: #01131F;
         
@@ -64,32 +67,34 @@
     </header>
     <!-- Hero Section -->
 
-    <section class="hero flex gap-3 px-[3%]">
-        <div class="left py-[20%] flex-1">
+    <section class="hero md:flex px-[3%]">
+        <div class="left py-[5%] flex-1">
             <h2 class="dm dm-big text-[#FFC107] text-[14px]">COLLABORATIVE SUPPLY CHAIN NETWORK</h2>
-            <h1 class="w-full bigger text-[60px] text-white lh my-3">Streamline Your <span class="text-[#03A9F4]">Supply Chain</span> with Our Platform</h1>
-            <p class="dm dm-small text-[20px] text-white"><span class="text-[#03A9F4]">Join</span> the waitlist <span class="text-[#03A9F4]">to connect with</span> top supply chain experts and be the <span class="text-[#03A9F4]">first to</span> streamline your operations.</p>
+            <h1 class="w-full bigger text-[30px] md:text-[60px] text-white md:lh my-3">Streamline Your <span class="text-[#03A9F4]">Supply Chain</span> with Our Platform</h1>
+            <p class="dm dm-small text-[16px] md:text-[20px] text-white"><span class="text-[#03A9F4]">Join</span> the waitlist <span class="text-[#03A9F4]">to connect with</span> top supply chain experts and be the <span class="text-[#03A9F4]">first to</span> streamline your operations.</p>
 
             <div class="input my-6 text-white">
                 <form class="relative">
-                    <input type="email" placeholder="Enter your email address" class="block w-[540px] py-4 rounded-[16px] bg-[#01131F] border-[0.5px] border-white pl-3">
-                    <a href="#" class="bg-[#03A9F4] text-white px-2 py-3 rounded-[8px] absolute right-[95px] top-1">Join the waitlist</a>
+                    <input type="email" placeholder="Enter your email address" class="block w-full md:w-[540px] py-3 md:py-4 rounded-[16px] bg-[#01131F] border-[0.5px] border-white pl-3">
+                    <a href="#" class="bg-[#03A9F4] text-white px-2 py-2 md:py-3 rounded-[8px] absolute right-[6px] md:right-[100px] top-1">Join the waitlist</a>
                 </form>
             </div>
 
-            <div class="flex w-[60%] items-center gap-4 mt-5">
+            <div class="md:flex md:w-[60%] items-center gap-4 mt-5">
                 <div class="flex-1">
-                    <img src="/images/people.png" alt="" class="w-full object-contain">
+                    <img src="/images/people.png" alt="" class="md:w-full object-contain w-[100px]">
                 </div>
                 <div class="flex-1">
                     <div class="flex flex-col">
-                        <img src="/images/rating-stars.png" alt="" class="w-full object-contain">
+                        <img src="/images/rating-stars.png" alt="" class="md:w-full w-[120px] object-contain mt-1 md:mt-0">
                         <p class="text-white dm dm-medium">Join over 200+ clients waiting</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="right flex-1 relative">
+        <div class="hidden md:block right flex-1 relative">
+            <img src="/images/Neonize Group.png" alt="" class=" h-[70vh] w-[1200px]">
+            <img src="/images/Image.svg" alt="" class="w-[40%] absolute top-[45px] right-[45px] h-[300px]">
             <div class="w-[48px] h-[48px] rounded-full bg-[#03A9F4] absolute bottom-0 right-0 flex justify-center items-center">
                 <a href="">
                     <img src="/images/Icon.png" alt="" class="w-[24px] h-[24px]">
@@ -103,48 +108,48 @@
     <section class="trustedBy py-5">
         <h2 class="text-[18px] dm dm-big text-[#BFBFBF] text-center">Trusted by Top Companies</h2>
 
-        <div class="company-logos flex gap-5">
-            <img src="/images/1.png" alt="" class="flex-1 object-contain">
-            <img src="/images/Vector.png" alt="" class="flex-1 object-contain">
-            <img src="/images/3.png" alt="" class="flex-1 object-contain">
-            <img src="/images/5.png" alt="" class="flex-1 object-contain">
-            <img src="/images/6.png" alt="" class="flex-1 object-contain">
-            <img src="/images/7.png" alt="" class="flex-1 object-contain">
+        <div class="company-logos flex gap-5 flex-wrap">
+            <img src="/images/1.png" alt="" class="md:flex-1 object-contain">
+            <img src="/images/Vector.png" alt="" class="md:flex-1 object-contain">
+            <img src="/images/3.png" alt="" class="md:flex-1 object-contain">
+            <img src="/images/5.png" alt="" class="md:flex-1 object-contain">
+            <img src="/images/6.png" alt="" class="md:flex-1 object-contain">
+            <img src="/images/7.png" alt="" class="md:flex-1 object-contain">
         </div>
     </section>
 
     <!-- end of trusted by -->
-     <section class="bg-[#022236] py-10 flex flex-col items-center gap-5">
+     <section class="bg-[#022236] py-10 flex flex-col items-center md:gap-5 gap-3">
         <h2 class="dm dm-big text-[#FFC107] text-[14px]">COLLABORATIVE SUPPLY CHAIN NETWORK</h2>
-        <h1 class="bigger text-white text-[48px]">Your <span class="text-[#03A9F4]">Supply</span> Chain, Your <span class="text-[#FFC107]">Way</span> </h1>
+        <h1 class="bigger text-white md:text-[48px] text-[24px]">Your <span class="text-[#03A9F4]">Supply</span> Chain, Your <span class="text-[#FFC107]">Way</span> </h1>
 
-        <p class="smaller text-white text-[24px] w-[60%] text-center">Fuse is a collaborative supply chain platform that connects businesses with freelance experts, streamlining supply chain processes and driving better business decisions.</p>
+        <p class="smaller text-white md:text-[24px] md:w-[60%] text-center">Fuse is a collaborative supply chain platform that connects businesses with freelance experts, streamlining supply chain processes and driving better business decisions.</p>
 
      </section>
 
-     <section class="py-10 px-[5%] flex gap-[12%]">
+     <section class="py-10 px-[5%] md:flex gap-[12%]">
         <div class="imageContainer flex-1">
             <img src="/images/firstImg.png" alt="" class="w-full object-contain">
         </div>
         <div class="texts flex-1 mt-4 flex flex-col gap-4">
             <h3 class="dm dm-big text-[#03A9F4] text-14px">SERVICE MARKET PLACE</h3>
-            <h1 class="text-white bigger text-[48px]" style="line-height: 60px;">Find Expert Supply Chain Solutions On Fuse Marketplace</h1>
+            <h1 class="text-white bigger text-[24px] md:text-[48px] md:lh60">Find Expert Supply Chain Solutions On Fuse Marketplace</h1>
             <p class="text-[#E6F6FE] text-[18px] dm dm-small" style="line-height: 28px;">Find freelance supply chain experts for all your business needs, from logistics planning to procurement and analytics. Collaborate with experts to streamline your supply chain. Get high-quality results and make better decisions.</p>
 
-            <a href="" class="flex mt-3 px-4 py-4 bg-[#032B44] text-white gap-3 dm dm-big text-[16px] rounded-[12px] items-center w-[35%]">Join the waitlist <img src="/images/arrow.png" alt="" class="w-[18px] h-[18px]"></a>
+            <a href="" class="flex mt-3 px-4 py-4 bg-[#032B44] text-white gap-3 dm dm-big text-[16px] rounded-[12px] items-center md:w-[35%] w-[70%]">Join the waitlist <img src="/images/arrow.png" alt="" class="w-[18px] h-[18px]"></a>
         </div>
      </section>
 
-     <section class="py-10 px-[5%] flex gap-[12%] flex-row-reverse">
+     <section class="py-10 px-[5%] md:flex gap-[12%] flex-row-reverse">
         <div class="imageContainer flex-1">
             <img src="/images/secondImg.png" alt="" class="w-full object-contain">
         </div>
         <div class="texts flex-1 mt-4 flex flex-col gap-4">
             <h3 class="dm dm-big text-[#FFC107] text-14px">COLLABORATIVE COMMUNITY FEATURE</h3>
-            <h1 class="text-white bigger text-[48px]" style="line-height: 60px;">Join Our Supply Chain Community here on Fuse</h1>
+            <h1 class="text-white bigger md:text-[48px] md:lh60 text-[24px]">Join Our Supply Chain Community here on Fuse</h1>
             <p class="text-[#E6F6FE] text-[18px] dm dm-small" style="line-height: 28px;">Connect with professionals and industry experts, Share insights, trends, and best practices. Get advice, support, and feedback. Grow your network and stay ahead.</p>
 
-            <a href="" class="flex mt-3 px-4 py-4 bg-[#FFC107] text-white gap-3 dm dm-big text-[16px] rounded-[12px] items-center w-[35%]">Join the waitlist <img src="/images/arrow.png" alt="" class="w-[18px] h-[18px]"></a>
+            <a href="" class="flex mt-3 px-4 py-4 bg-[#FFC107] text-white gap-3 dm dm-big text-[16px] rounded-[12px] items-center md:w-[35%] w-[70%]">Join the waitlist <img src="/images/arrow.png" alt="" class="w-[18px] h-[18px]"></a>
         </div>
      </section>
 
