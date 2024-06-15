@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Familjen+Grotesk:wght@400..700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
   </head>
 
   <style>
@@ -153,23 +154,23 @@
         </div>
      </section>
 
-     <section class="py-10 px-[5%] flex gap-[12%]">
+     <section class="py-10 px-[5%] md:flex gap-[12%] flex-row-reverse">
         <div class="imageContainer flex-1">
             <img src="/images/thirdImg.png" alt="" class="w-full object-contain">
         </div>
         <div class="texts flex-1 mt-4 flex flex-col gap-4">
             <h3 class="dm dm-big text-[#03A9F4] text-14px">EFFICIENT 3PL SERVICES</h3>
-            <h1 class="text-white bigger text-[48px]" style="line-height: 60px;">Optimize your operations with Fuse 3PL Solutions</h1>
+            <h1 class="text-white bigger md:text-[48px] md:lh60 text-[24px]">Optimize your operations with Fuse 3PL Solutions</h1>
             <p class="text-[#E6F6FE] text-[18px] dm dm-small" style="line-height: 28px;">Leverage integrated third-party logistics providers to streamline your supply chain and improve efficiency. Reduce costs, enhance scalability, and ensure reliable logistics management with Fuse 3PL solutions.</p>
 
-            <a href="" class="flex mt-3 px-4 py-4 bg-[#032B44] text-white gap-3 dm dm-big text-[16px] rounded-[12px] items-center w-[35%]">Join the waitlist <img src="/images/arrow.png" alt="" class="w-[18px] h-[18px]"></a>
+            <a href="" class="flex mt-3 px-4 py-4 bg-[#032B44] text-white gap-3 dm dm-big text-[16px] rounded-[12px] items-center md:w-[35%] w-[70%]">Join the waitlist <img src="/images/arrow.png" alt="" class="w-[18px] h-[18px]"></a>
         </div>
      </section>
 
      <section class="px-[3%]">
         <div class="bg-[#03A9F4] py-8 rounded-[24px] pl-5">
-            <p class="text-white font-inter text-[31px]">Questions?</p>
-            <p class="text-white font-inter text-[31px]">FAQ</p>
+            <p class="text-white font-inter md:text-[31px] text-[26px]">Questions?</p>
+            <p class="text-white font-inter md:text-[31px] text-[26px]">FAQ</p>
             <div class="mt-5 w-[52px] h-[32px] rounded-[16px] bg-white flex items-center justify-center">
                 <img src="/images/arrow-up.png" alt="" class="w-[20px] h-[20px]">
             </div>
@@ -178,45 +179,95 @@
 <!-- Faq section -->
 
      <section class="faq px-7%">
-        <div class="firstq px-5 border border-[#E9E9EA] rounded-[16px] flex justify-between items-center w-[75%] mx-auto mt-8 mb-4 py-4">
-            <p class="dm dm-big text-[18px] text-[#E9E9EA]">What is Fuse?</p>
-            <img src="/images/faqicondash.png" alt="">
+        <div class="border border-[#E9E9EA] rounded-[16px] w-[75%] mx-auto mt-8 px-5" x-data="{ open: false }">
+            <div class="firstq   flex justify-between items-center  mb-4 py-4">
+                <p class="dm dm-big md:text-[18px] text-[15px] text-[#E9E9EA]">What is Fuse?</p>
+                <button x-on:click="open = ! open"><img src="/images/faqicondash.png" alt="" class="cursor-pointer"></button>
+                
+               
+            </div>
+            <div class="answer" x-show="open" x-transition>
+                <p class="text-white dm dm-big md:text-[15px] text-[12px] text-[#E9E9EA]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam accusamus rerum sed impedit ipsa dolore mollitia tenetur placeat dolores exercitationem!</p>
+            </div>
         </div>
-        <div class="firstq px-5 border border-[#E9E9EA] rounded-[16px] flex justify-between items-center w-[75%] mx-auto mt-8 mb-4 py-4">
-            <p class="dm dm-big text-[18px] text-[#E9E9EA]">How does Fuse work?</p>
-            <img src="/images/faqicondash.png" alt="">
+        
+        
+        <div class="border border-[#E9E9EA] rounded-[16px] w-[75%] mx-auto mt-8 px-5" x-data="{ open: false }">
+            <div class="firstq   flex justify-between items-center  mb-4 py-4">
+                <p class="dm dm-big md:text-[18px] text-[15px] text-[#E9E9EA]">How does Fuse work?</p>
+                <button x-on:click="open = ! open"><img src="/images/faqicondash.png" alt="" class="cursor-pointer"></button>
+                
+               
+            </div>
+            <div class="answer" x-show="open" x-transition>
+                <p class="text-white dm dm-big md:text-[15px] text-[12px] text-[#E9E9EA]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam accusamus rerum sed impedit ipsa dolore mollitia tenetur placeat dolores exercitationem!</p>
+            </div>
         </div>
-        <div class="firstq px-5 border border-[#E9E9EA] rounded-[16px] flex justify-between items-center w-[75%] mx-auto mt-8 mb-4 py-4">
-            <p class="dm dm-big text-[18px] text-[#E9E9EA]">What kind of services can I find on Fuse?</p>
-            <img src="/images/faqicondash.png" alt="">
+
+        <div class="border border-[#E9E9EA] rounded-[16px] w-[75%] mx-auto mt-8 px-5" x-data="{ open: false }">
+            <div class="firstq   flex justify-between items-center  mb-4 py-4">
+                <p class="dm dm-big md:text-[18px] text-[15px] text-[#E9E9EA]">What kind of services can I find on Fuse?</p>
+                <button x-on:click="open = ! open"><img src="/images/faqicondash.png" alt="" class="cursor-pointer"></button>
+                
+               
+            </div>
+            <div class="answer" x-show="open" x-transition>
+                <p class="text-white dm dm-big md:text-[15px] text-[12px] text-[#E9E9EA]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam accusamus rerum sed impedit ipsa dolore mollitia tenetur placeat dolores exercitationem!</p>
+            </div>
         </div>
-        <div class="firstq px-5 border border-[#E9E9EA] rounded-[16px] flex justify-between items-center w-[75%] mx-auto mt-8 mb-4 py-4">
-            <p class="dm dm-big text-[18px] text-[#E9E9EA]">Who can join Fuse?</p>
-            <img src="/images/faqicondash.png" alt="">
+
+        <div class="border border-[#E9E9EA] rounded-[16px] w-[75%] mx-auto mt-8 px-5" x-data="{ open: false }">
+            <div class="firstq   flex justify-between items-center  mb-4 py-4">
+                <p class="dm dm-big md:text-[18px] text-[15px] text-[#E9E9EA]">Who can join Fuse?</p>
+                <button x-on:click="open = ! open"><img src="/images/faqicondash.png" alt="" class="cursor-pointer"></button>
+                
+               
+            </div>
+            <div class="answer" x-show="open" x-transition>
+                <p class="text-white dm dm-big md:text-[15px] text-[12px] text-[#E9E9EA]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam accusamus rerum sed impedit ipsa dolore mollitia tenetur placeat dolores exercitationem!</p>
+            </div>
         </div>
-        <div class="firstq px-5 border border-[#E9E9EA] rounded-[16px] flex justify-between items-center w-[75%] mx-auto mt-8 mb-4 py-4">
-            <p class="dm dm-big text-[18px] text-[#E9E9EA]">How do I sign up for Fuse?</p>
-            <img src="/images/faqicondash.png" alt="">
+
+        <div class="border border-[#E9E9EA] rounded-[16px] w-[75%] mx-auto mt-8 px-5" x-data="{ open: false }">
+            <div class="firstq   flex justify-between items-center  mb-4 py-4">
+                <p class="dm dm-big md:text-[18px] text-[15px] text-[#E9E9EA]">How do I sign up for Fuse?</p>
+                <button x-on:click="open = ! open"><img src="/images/faqicondash.png" alt="" class="cursor-pointer"></button>
+                
+               
+            </div>
+            <div class="answer" x-show="open" x-transition>
+                <p class="text-white dm dm-big md:text-[15px] text-[12px] text-[#E9E9EA]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam accusamus rerum sed impedit ipsa dolore mollitia tenetur placeat dolores exercitationem!</p>
+            </div>
         </div>
-        <div class="firstq px-5 border border-[#E9E9EA] rounded-[16px] flex justify-between items-center w-[75%] mx-auto mt-8 mb-4 py-4">
-            <p class="dm dm-big text-[18px] text-[#E9E9EA]">How does payment work on Fuse?</p>
-            <img src="/images/faqicondash.png" alt="">
+
+        <div class="border border-[#E9E9EA] rounded-[16px] w-[75%] mx-auto mt-8 px-5" x-data="{ open: false }">
+            <div class="firstq   flex justify-between items-center  mb-4 py-4">
+                <p class="dm dm-big md:text-[18px] text-[15px] text-[#E9E9EA]">How does payment work on Fuse?</p>
+                <button x-on:click="open = ! open"><img src="/images/faqicondash.png" alt="" class="cursor-pointer"></button>
+                
+               
+            </div>
+            <div class="answer" x-show="open" x-transition>
+                <p class="text-white dm dm-big md:text-[15px] text-[12px] text-[#E9E9EA]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam accusamus rerum sed impedit ipsa dolore mollitia tenetur placeat dolores exercitationem!</p>
+            </div>
         </div>
+
+        
      </section>
 
      <!-- ready to step up section -->
 
      <section class="ready px-[3%] mt-8">
-        <div class="bg-[#032B44] rounded-[24px] px-6 py-4 flex items-center gap-[10%] pb-12">
+        <div class="bg-[#032B44] rounded-[24px] px-6 py-4 md:flex items-center gap-[10%] pb-12">
             <div class="firstFlex" style="flex:3">
-                <h2 class="bigger text-[48px] text-white" style="line-height: 60px;">Ready to <span class="text-[#B1E4FC]">Step Up</span> with <span class="text-[#03A9F4]">Fuse?</span></h2>
+                <h2 class="bigger text-[24px] md:text-[48px] text-white md:lh60">Ready to <span class="text-[#B1E4FC]">Step Up</span> with <span class="text-[#03A9F4]">Fuse?</span></h2>
                 <p class="text-[14.6px] text-[#FFFFFF] font-sans" style="line-height: 26px; font-weight: 500;">Join 200+ professionals and businesses already signed up and waiting to transform their supply chains with Fuse.</p>
             </div>
 
-            <div class="secondFlex" style="flex:2">
-                <form>
-                    <input type="text" class="bg-[#032B44] border border-[#B3B6BC] rounded-[12px] py-4 pl-3 text-[#B3B6BC80] text-[12px]" placeholder="Your e-mail">
-                    <button class="py-[12px] px-[16px] rounded-[12px] bg-white text-[#032B44] dm dm-big text-[16px]">Join the Waitlist</button>
+            <div class="secondFlex mt-8 md:mt-0" style="flex:2">
+                <form class="flex md:block gap-1">
+                    <input type="text" class="bg-[#032B44] border border-[#B3B6BC] rounded-[12px] md:py-4 pl-3 text-[#B3B6BC80] text-[12px]" placeholder="Your e-mail">
+                    <button class="md:py-[12px] py-[10px] px-[1px] md:px-[16px] rounded-[12px] bg-white text-[#032B44] dm dm-big md:text-[16px] text-[12px]">Join the Waitlist</button>
                 </form>
             </div>
            
@@ -256,7 +307,7 @@
 
       </footer>
       <div class="mt-10 h-[1px] w-[90%] mx-auto bg-[#B1BDC5]"></div>
-      <div class="copyright flex gap-1 w-[25%] mx-auto mt-4 items-center mb-5">
+      <div class="copyright flex gap-1 w-[80%] md:w-[25%] mx-auto mt-4 items-center mb-5">
         <img src="/images/copyright.png" alt="" class="w-[17px] h-[16px]">
         <p class="dm dm-small text-[14px] text-[#6B7589]">Copyright © 2024 Fuse. All rights reserved.</p>
       </div>
